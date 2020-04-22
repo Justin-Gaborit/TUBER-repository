@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - Generation_Zone_1
     - OrientationScript
     - PlayerAnimationHandler
+    - PlayerHealthManager
     - WorldGeneration
     Unity.ProBuilder.dll:
     - UnityEngine.ProBuilder.ProBuilderMesh
@@ -26,6 +27,7 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
   sceneClasses:
     Assets/Scenes/SampleScene 1.unity:
     - Class: 1
@@ -65,31 +67,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9718}
+      Script: {instanceID: 9722}
     - Class: 114
-      Script: {instanceID: 10014}
+      Script: {instanceID: 10018}
     - Class: 114
-      Script: {instanceID: 10206}
+      Script: {instanceID: 10032}
     - Class: 114
-      Script: {instanceID: 10244}
+      Script: {instanceID: 10210}
     - Class: 114
-      Script: {instanceID: 10566}
+      Script: {instanceID: 10248}
     - Class: 114
-      Script: {instanceID: 10624}
+      Script: {instanceID: 10570}
     - Class: 114
-      Script: {instanceID: 11092}
+      Script: {instanceID: 10628}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11098}
     - Class: 114
-      Script: {instanceID: 11840}
+      Script: {instanceID: 11466}
     - Class: 114
-      Script: {instanceID: 11946}
+      Script: {instanceID: 11632}
     - Class: 114
-      Script: {instanceID: 12308}
+      Script: {instanceID: 11848}
     - Class: 114
-      Script: {instanceID: 12392}
+      Script: {instanceID: 11954}
     - Class: 114
-      Script: {instanceID: 14782}
+      Script: {instanceID: 12316}
+    - Class: 114
+      Script: {instanceID: 12400}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -99,6 +103,8 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
       Script: {instanceID: 0}
     - Class: 223
       Script: {instanceID: 0}
@@ -409,6 +415,12 @@ ScriptsOnlyBuild:
     className: IgnoreSnap
   - hash:
       serializedVersion: 2
+      Hash: 215e17d3be3cfd1da86073fed4d03e0e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuManager
+  - hash:
+      serializedVersion: 2
       Hash: 30d5ebb6f661847ac4a36cc5053752bf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -463,7 +475,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 21fcd912924e129b51d141fb65683ca8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterTriggerManager
@@ -509,6 +521,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
     className: Entity
+  - hash:
+      serializedVersion: 2
+      Hash: 24635eb526722255ee9cbf61543533e6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerHealthManager
   - hash:
       serializedVersion: 2
       Hash: ee0cef6caaac8ae485bfa82f000f0f7b
@@ -650,4 +668,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene 1.unity
-  playerPath: C:/Users/jstng/Desktop/Phantom Fall Build Folder/Phatom Fall.exe
+  playerPath: C:/Users/jstng/Desktop/Temporary Build Folder/Phatom Fall.exe

@@ -8,6 +8,8 @@ TagManager:
   - PlayerObject
   - DamageCollider
   - ItemTag_ChickenLeg
+  - ItemTag_Doubloon
+  - Distance_Trigger
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - 
   - 
   - Debug Layer
-  - 
+  - Raycast_Ground_Layer
   - 
   - 
   - 

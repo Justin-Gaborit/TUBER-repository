@@ -13,6 +13,7 @@ public class PlayerAnimationHandler : MonoBehaviour
         animator = GetComponent<Animator>();                    //Gets ahold of animator
         PlayerRB = gameObject.GetComponent<Rigidbody>();        //Gets ahold of players rigidbody
         _GroundedBool = GetComponent<CharacterControllerV2>();    //Gets ahold of "CharacterController" script
+
     }
 
     void Update()

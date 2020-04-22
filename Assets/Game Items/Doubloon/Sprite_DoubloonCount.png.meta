@@ -1,28 +1,40 @@
 fileFormatVersion: 2
-guid: 0825a4588dcbe564598a6de1d3020446
+guid: 9fde2f8dbec7f924fafebb445ac6ae18
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7534356953332054700
-    second: Player_Healthbar_0
+      213: 8572776260260933103
+    second: Sprite_DoubloonCount_0
   - first:
-      213: -5180221247989794868
-    second: Player_Healthbar_1
+      213: -8842983416657890280
+    second: Sprite_DoubloonCount_1
   - first:
-      213: 2354472037270704308
-    second: Player_Healthbar_2
+      213: 3529089522916406611
+    second: Sprite_DoubloonCount_2
   - first:
-      213: 6997691047494415654
-    second: Player_Healthbar_3
+      213: 6678156935637891668
+    second: Sprite_DoubloonCount_3
   - first:
-      213: 449890472177402303
-    second: Player_Healthbar_4
+      213: -411866447793277015
+    second: Sprite_DoubloonCount_4
   - first:
-      213: -8587015040363593219
-    second: Player_Healthbar_5
+      213: -5181963024282261851
+    second: Sprite_DoubloonCount_5
   - first:
-      213: -1814017173069674310
-    second: Player_Healthbar_6
+      213: 7777463273949051985
+    second: Sprite_DoubloonCount_6
+  - first:
+      213: 371560624441609841
+    second: Sprite_DoubloonCount_7
+  - first:
+      213: -3200723500515806470
+    second: Sprite_DoubloonCount_8
+  - first:
+      213: 5003916545004772204
+    second: Sprite_DoubloonCount_9
+  - first:
+      213: 6776282873209517041
+    second: Sprite_DoubloonCount_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,7 +107,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -119,12 +131,96 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Healthbar_0
+      name: Sprite_DoubloonCount_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8381dd13566bed646a47cb8ea8e71d4a
+      internalID: 8572776260260933103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_DoubloonCount_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5632b07fcdba8464089eb4105c01cb34
+      internalID: -8842983416657890280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_DoubloonCount_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97c9e2114a2c4544bc5bed69657e875
+      internalID: 3529089522916406611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_DoubloonCount_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296b185dfc6b6724c84f3287255cab6c
+      internalID: 6678156935637891668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_DoubloonCount_4
       rect:
         serializedVersion: 2
         x: 0
         y: 192
-        width: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -133,19 +229,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ad5055f034e0e44816eb067eb5531c
-      internalID: 7534356953332054700
+      spriteID: ba746edd3f3732c40899045612a2d14c
+      internalID: -411866447793277015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Healthbar_1
+      name: Sprite_DoubloonCount_5
       rect:
         serializedVersion: 2
         x: 0
         y: 160
-        width: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,19 +250,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e76ad4a92fbed94c9cceae9da5a8dd7
-      internalID: -5180221247989794868
+      spriteID: fc2d07229de32a44090c83be81ed2a10
+      internalID: -5181963024282261851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Healthbar_2
+      name: Sprite_DoubloonCount_6
       rect:
         serializedVersion: 2
         x: 0
         y: 128
-        width: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -175,19 +271,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3248075c620fdfc43922bc7c64ad183e
-      internalID: 2354472037270704308
+      spriteID: eb40aca0be6bc0342970af6fbc60e52f
+      internalID: 7777463273949051985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Healthbar_3
+      name: Sprite_DoubloonCount_7
       rect:
         serializedVersion: 2
         x: 0
         y: 96
-        width: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,19 +292,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e580e8aba9eece14ca548e04557c6aee
-      internalID: 6997691047494415654
+      spriteID: ce3525ee12fb9bf468d71c989c520ff1
+      internalID: 371560624441609841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Healthbar_4
+      name: Sprite_DoubloonCount_8
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -217,19 +313,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18bba7956214fe1439341c9965822edd
-      internalID: 449890472177402303
+      spriteID: c993e761b96e3c048a08d15c23d1626f
+      internalID: -3200723500515806470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Healthbar_5
+      name: Sprite_DoubloonCount_9
       rect:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -238,19 +334,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b9307a3d07d5714f9365d29c996c0a9
-      internalID: -8587015040363593219
+      spriteID: 79ebf163d8f46004dbbdb4310f1835ec
+      internalID: 5003916545004772204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Healthbar_6
+      name: Sprite_DoubloonCount_10
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -259,8 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0cfe5b1bd7d35745a634a98f9e939fa
-      internalID: -1814017173069674310
+      spriteID: 552abf0833a98a6439e608146aded91e
+      internalID: 6776282873209517041
       vertices: []
       indices: 
       edges: []
@@ -268,7 +364,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 78da2e53efdbf444fafa2f2daea6a253
+    spriteID: 9b37f757d93b7404cbf0d859b11a3460
     internalID: 0
     vertices: []
     indices: 
