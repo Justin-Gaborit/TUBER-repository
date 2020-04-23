@@ -10,6 +10,7 @@ TagManager:
   - ItemTag_ChickenLeg
   - ItemTag_Doubloon
   - Distance_Trigger
+  - ItemTag_Zippy
   layers:
   - Default
   - TransparentFX

@@ -7,7 +7,10 @@ ScriptsOnlyBuild:
     - Generation_Zone_1
     - OrientationScript
     - PlayerAnimationHandler
+    - PlayerDistanceManager
+    - PlayerDoubloonManager
     - PlayerHealthManager
+    - TargetSettings
     - WorldGeneration
     Unity.ProBuilder.dll:
     - UnityEngine.ProBuilder.ProBuilderMesh
@@ -28,6 +31,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene 1.unity:
     - Class: 1
@@ -69,6 +73,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9722}
     - Class: 114
+      Script: {instanceID: 9974}
+    - Class: 114
       Script: {instanceID: 10018}
     - Class: 114
       Script: {instanceID: 10032}
@@ -81,20 +87,28 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10628}
     - Class: 114
-      Script: {instanceID: 11098}
+      Script: {instanceID: 11032}
     - Class: 114
-      Script: {instanceID: 11466}
+      Script: {instanceID: 11100}
     - Class: 114
-      Script: {instanceID: 11632}
+      Script: {instanceID: 11468}
     - Class: 114
-      Script: {instanceID: 11848}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 11954}
+      Script: {instanceID: 11850}
     - Class: 114
-      Script: {instanceID: 12316}
+      Script: {instanceID: 11956}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12312}
+    - Class: 114
+      Script: {instanceID: 12320}
+    - Class: 114
+      Script: {instanceID: 12404}
+    - Class: 114
+      Script: {instanceID: 40476}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -403,6 +417,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 82c4cc794b3d4aea47f6dcf725c27a80
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerDoubloonManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -475,7 +495,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 21fcd912924e129b51d141fb65683ca8
+      Hash: a1dcb5706d0ffe84939b6e8a09f09844
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterTriggerManager
@@ -595,6 +615,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: d67e9d79d9a588da72b99a83a27faaf9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerDistanceManager
+  - hash:
+      serializedVersion: 2
       Hash: d94f50fc667ee0fc9e6d68feebd62537
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -665,6 +691,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TargetSettings
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene 1.unity

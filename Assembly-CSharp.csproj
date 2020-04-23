@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Player Scripts\LandPointFollower.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\OrientationScript.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerAnimationHandler.cs" />
+    <Compile Include="Assets\Scripts\TargetSettings.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\PlayerDistanceManager.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\PlayerDoubloonManager.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\PlayerHealthManager.cs" />

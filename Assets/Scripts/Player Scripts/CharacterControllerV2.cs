@@ -23,6 +23,7 @@ public class CharacterControllerV2 : MonoBehaviour
         _JumpHeightMet = false;
         _LRMaxSpeed = _LRSpeed;
         _IsJumping = false;
+        _RunSpeed = 40;
     }
 
     void Update()
