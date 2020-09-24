@@ -33,8 +33,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -90,7 +92,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11896}
     - Class: 114
-      Script: {instanceID: 12456}
+      Script: {instanceID: 12458}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -189,9 +191,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12038}
     - Class: 114
-      Script: {instanceID: 12168}
+      Script: {instanceID: 12170}
     - Class: 114
-      Script: {instanceID: 12456}
+      Script: {instanceID: 12458}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -274,11 +276,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12002}
     - Class: 114
-      Script: {instanceID: 12364}
+      Script: {instanceID: 12366}
     - Class: 114
-      Script: {instanceID: 12372}
+      Script: {instanceID: 12374}
     - Class: 114
-      Script: {instanceID: 12456}
+      Script: {instanceID: 12458}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -329,7 +331,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11896}
     - Class: 114
-      Script: {instanceID: 12456}
+      Script: {instanceID: 12458}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -369,7 +371,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: d9f642c1a8155ac5042bd9ff5511ecad
+      Hash: dd8dc4eab5b1407c4d6b8c2cd8c9ab1e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenuManager
@@ -871,6 +873,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 981aac72944661c9846a3e7aafabba87
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IntroScript
   - hash:
       serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d

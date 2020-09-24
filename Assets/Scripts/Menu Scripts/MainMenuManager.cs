@@ -26,12 +26,24 @@ public class MainMenuManager : MonoBehaviour
     public GameObject Start_Button;         //Establishes a public game object that holds the "press any button text".
     public Animator StartButtonAnimator;    //Establishes a public animator that holds the "press any button text" animator.
 
+    public GameObject Menu_Button_Container;
     public GameObject ControlsPanel;
     public GameObject CreditsPanel;
     public GameObject OptionsPanel;
 
+    public GameObject Intro_Panel;
+    public GameObject By_Text;
+    public GameObject Justin_Text;
+    public GameObject Tuber_Image;
+
+    public GameObject MainMenu_BG_Audio;
+    public AudioSource SFX_1;
+    public AudioSource SFX_2;
+
     void Start()
     {
+        StartCoroutine(myFunction());
+
         TUBERTitleAnimator = TUBER_Title.GetComponent<Animator>();      //Sets the "TUBERTitleAnimator" to the animator attached to the "TUBER_Title" game object.
         StartButtonAnimator = Start_Button.GetComponent<Animator>();    //Sets the "StartButtonAnimator" to the animator attached to the "Start_Button" game object.
 
@@ -145,6 +157,28 @@ public class MainMenuManager : MonoBehaviour
     {
         OptionsPanel.gameObject.SetActive(false);
     }
+
+
+    IEnumerator myFunction()
+    {
+        yield return new WaitForSeconds(1);
+        By_Text.gameObject.SetActive(true);
+        SFX_2.Play();
+
+        yield return new WaitForSeconds(1.2f);
+        Justin_Text.gameObject.SetActive(true);
+        Tuber_Image.gameObject.SetActive(true);
+        SFX_1.Play();
+
+        yield return new WaitForSeconds(4);
+        Intro_Panel.gameObject.SetActive(false);
+        TUBER_Title.gameObject.SetActive(true);
+        Start_Button.gameObject.SetActive(true);
+        Menu_Button_Container.gameObject.SetActive(true);
+        MainMenu_BG_Audio.gameObject.SetActive(true);
+    }
+
+
 
     // Update is called once per frame
     void Update()

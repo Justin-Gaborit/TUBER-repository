@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Audio Scripts\DontDestroyAudio.cs" />
     <Compile Include="Assets\Scripts\Death Screen Scripts\Random_Text.cs" />
     <Compile Include="Assets\Scripts\Death Screen Scripts\TubesTraveledValue.cs" />
+    <Compile Include="Assets\Scripts\Intro Scripts\IntroScript.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\MainMenuCameraManager.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\Menu Scripts\MenuButtonsManager.cs" />
