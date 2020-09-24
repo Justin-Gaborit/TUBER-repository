@@ -37,14 +37,14 @@ MonoBehaviour:
   m_Name: Movie
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 29
+  take: 66
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
       m_Root: 5
-      m_Leaf: C:/Users/jstng/Desktop/Local Repository/Portfolio-Site/images/TUBER
+      m_Leaf: C:/Users/jstng/Desktop/Project Pictures/TUBER
       m_ForceAssetFolder: 0
-    m_FileName: playermovementvideo
+    m_FileName: mainmenu<Date>
   outputFormat: 0
   videoBitRateMode: 2
   captureAlpha: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06397f605c749fe4dbe2df4bbd1ef4a1, type: 3}
   m_Name: Image Sequence
   m_EditorClassIdentifier: 
-  enabled: 1
+  enabled: 0
   take: 4
   captureEveryNthFrame: 1
   fileNameGenerator:

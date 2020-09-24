@@ -4,36 +4,31 @@ using UnityEngine;
 
 public class Generation_Zone_1 : MonoBehaviour
 {
-    public GameObject Loop1;
-
+    public GameObject[] CellArray;
 
     void Start()
     {
-        Loop1 = Resources.Load("Zone1_Cell2") as GameObject;
-
+        CellArray[0] = Resources.Load("Zone1_Cell_0") as GameObject;
+        CellArray[1] = Resources.Load("Zone1_Cell_1") as GameObject;
+        CellArray[2] = Resources.Load("Zone1_Cell_2") as GameObject;
+        CellArray[3] = Resources.Load("Zone1_Cell_3") as GameObject;
+        CellArray[4] = Resources.Load("Zone1_Cell_4") as GameObject;
+        CellArray[5] = Resources.Load("Zone1_Cell_5") as GameObject;
+        CellArray[6] = Resources.Load("Zone1_Cell_6") as GameObject;
     }
-
 
     private void OnTriggerEnter(Collider collision)
     {
-
         Vector3 SpawnLocation = new Vector3();
         SpawnLocation = GameObject.Find("SpawnLoc").transform.position;
 
-
-        if (collision.gameObject.name == "PlayerObject")
+        if (collision.gameObject.tag == "PlayerObject")
         {
-            int random = Random.Range(1, 1);
-            switch (random)
-            {
-                case 1:
-                    Instantiate(Loop1, SpawnLocation, Quaternion.identity);
-                    Destroy(GameObject.Find("SpawnLoc"));
-                    Debug.Log("Collided");
-                    Destroy(gameObject);
-                    break;
-            }
+            int RandomInt = Random.Range(0, 6);
+            Instantiate(CellArray[RandomInt], SpawnLocation, Quaternion.identity);
+            Destroy(GameObject.Find("SpawnLoc"));
+            Debug.Log("Collided and Cell Generated");
+            Destroy(gameObject);
         }
     }
-
 }

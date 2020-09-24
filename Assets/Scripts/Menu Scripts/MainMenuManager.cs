@@ -1,27 +1,154 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-    public Animator mainmenumanager;
-    int currentoption = 0;
+    public GameObject TUBER_Title;          //Establishes a public game object that holds the menu logo.
+    public Animator TUBERTitleAnimator;     //Establishes a public animator that holds the TUBER logo animator.
 
-    // Update is called once per frame
+    public GameObject ButtonRun;
+    public Animator ButtonRunAnimator;
+
+    public GameObject ButtonControls;
+    public Animator ButtonControlsAnimator;
+
+    public GameObject ButtonOptions;
+    public Animator ButtonOptionsAnimator;
+
+    public GameObject ButtonCredits;
+    public Animator ButtonCreditsAnimator;
+
+    public GameObject ButtonExit;
+    public Animator ButtonExitAnimator;
+
+    public GameObject Start_Button;         //Establishes a public game object that holds the "press any button text".
+    public Animator StartButtonAnimator;    //Establishes a public animator that holds the "press any button text" animator.
+
+    public GameObject ControlsPanel;
+    public GameObject CreditsPanel;
+    public GameObject OptionsPanel;
+
     void Start()
     {
-        mainmenumanager = GetComponent<Animator>();                    //Gets ahold of animator
-        mainmenumanager.SetBool("start_to_controls", true);
-        currentoption = 1;
+        TUBERTitleAnimator = TUBER_Title.GetComponent<Animator>();      //Sets the "TUBERTitleAnimator" to the animator attached to the "TUBER_Title" game object.
+        StartButtonAnimator = Start_Button.GetComponent<Animator>();    //Sets the "StartButtonAnimator" to the animator attached to the "Start_Button" game object.
+
+        ButtonRunAnimator = ButtonRun.GetComponent<Animator>();
+        ButtonRunAnimator.speed = 0;
+
+        ButtonControlsAnimator = ButtonControls.GetComponent<Animator>();
+        ButtonControlsAnimator.speed = 0;
+
+        ButtonOptionsAnimator = ButtonOptions.GetComponent<Animator>();
+        ButtonOptionsAnimator.speed = 0;
+
+        ButtonCreditsAnimator = ButtonCredits.GetComponent<Animator>();
+        ButtonCreditsAnimator.speed = 0;
+
+        ButtonExitAnimator = ButtonExit.GetComponent<Animator>();
+        ButtonExitAnimator.speed = 0;
     }
 
+    void StartMainMenuSystem()
+    {
+        bool TUBER_Title_Anim1 = false;
+
+        if (TUBERTitleAnimator.GetCurrentAnimatorStateInfo(0).IsName("TUBERMenuTitle_Anim1") &&
+            TUBERTitleAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            TUBER_Title_Anim1 = true;
+        }
+
+        if (TUBER_Title_Anim1 == true && Input.anyKey)
+        {
+            Start_Button.SetActive(false);
+            TUBERTitleAnimator.SetInteger("TUBER_Title_MenuEvent_1", 1);
+            ButtonRunAnimator.speed = 1;
+            ButtonControlsAnimator.speed = 1;
+            ButtonOptionsAnimator.speed = 1;
+            ButtonCreditsAnimator.speed = 1;
+            ButtonExitAnimator.speed = 1;
+        }
+    }
+
+    //Main Menu Buttons
+    public void RunButtonPressed()
+    {
+        SceneManager.LoadScene("RunScene");
+    }
+    public void ControlsButtonPressed()
+    {
+        ControlsPanel.gameObject.SetActive(true);
+    }
+
+    public void CreditsButtonPressed()
+    {
+        CreditsPanel.gameObject.SetActive(true);
+    }
+
+    public void OptionsButtonPressed()
+    {
+        OptionsPanel.gameObject.SetActive(true);
+    }
+
+    public void ExitButtonPressed()
+    {
+        Application.Quit();
+    }
+
+    //Resolution Buttons
+    public void Button1920X1080()
+    {
+        Screen.SetResolution(1920, 1080, true);
+    }
+    public void Button1600X900()
+    {
+        Screen.SetResolution(1600, 900, true);
+    }
+    public void Button1536X864()
+    {
+        Screen.SetResolution(1536, 864, true);
+    }
+    public void Button1440X900()
+    {
+        Screen.SetResolution(1440, 900, true);
+    }
+    public void Button1366X768()
+    {
+        Screen.SetResolution(1366, 768, true);
+    }
+    public void Button1280X720()
+    {
+        Screen.SetResolution(1280, 720, true);
+    }
+
+    //Windowed Buttons
+    public void WindowedButton_OnOff()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
+    }
+
+    //Panel Back Buttons
+    public void ControlsPanelBackButtonPressed()
+    {
+        ControlsPanel.gameObject.SetActive(false);
+    }
+
+    public void CreditsPanelBackButtonPressed()
+    {
+        CreditsPanel.gameObject.SetActive(false);
+    }
+
+    public void OptionsPanelBackButtonPressed()
+    {
+        OptionsPanel.gameObject.SetActive(false);
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        if (currentoption == 1 && Input.GetKey(KeyCode.DownArrow))
-        {
-            mainmenumanager.SetBool("controls_to_exit", true);
-            currentoption = 2;
-            Input.ResetInputAxes();
-        }
+        StartMainMenuSystem();
     }
 }

@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class CharacterTriggerManager : MonoBehaviour
 {
     /* Establishes game objects */
     public GameObject Player;
+
+    public Animator PlayerAnimator;
 
     /* Establishes integers */
     public int PlayerHealth;
@@ -21,6 +24,7 @@ public class CharacterTriggerManager : MonoBehaviour
 
     private void Start()
     {
+        PlayerAnimator = GetComponent<Animator>();
         PlayerDead = false;     /* The player dead bool is set to false by default */
         ZippyBuff_on = false;   /* The Zippy item buff is set to "false" by default */
         Zippy_CountDown = 10f;  /* This is the length of time that passes before the zippy buff wares off */
@@ -92,6 +96,11 @@ public class CharacterTriggerManager : MonoBehaviour
         if (Player.GetComponent<CharacterControllerV2>()._LRSpeed <= 0)
         {
             Player.GetComponent<CharacterControllerV2>()._LRSpeed = 0;
+        }
+
+        if (Player.GetComponent<CharacterControllerV2>()._LRSpeed == 0)
+        {
+            SceneManager.LoadScene("DeathScene");
         }
     }
 
