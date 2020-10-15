@@ -11,6 +11,9 @@ TagManager:
   - ItemTag_Doubloon
   - Distance_Trigger
   - ItemTag_Zippy
+  - CactoTag_Center
+  - CactoTag_Left
+  - CactoTag_Right
   layers:
   - Default
   - TransparentFX
