@@ -68,6 +68,7 @@
     <Compile Include="Assets\1-Scripts\Death Screen Scripts\TubesTraveledValue.cs" />
     <Compile Include="Assets\1-Scripts\DestroyCell_Trigger.cs" />
     <Compile Include="Assets\1-Scripts\Intro Scripts\IntroScript.cs" />
+    <Compile Include="Assets\1-Scripts\Menu Scripts\DeathMenuManager.cs" />
     <Compile Include="Assets\1-Scripts\Menu Scripts\MainMenuCameraManager.cs" />
     <Compile Include="Assets\1-Scripts\Menu Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\1-Scripts\Menu Scripts\MenuButtonsManager.cs" />
@@ -97,9 +98,11 @@
     <Compile Include="Assets\1-Scripts\Zone 1 Scripts\Zone1MobSpawnScript.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Generation_Zone_1.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Generation_Zone_2.cs" />
+    <Compile Include="Assets\1-Scripts\Zone Generation\Generation_Zone_3.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\WorldGeneration.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Zone_1_SkyboxSet.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Zone_2_SkyboxSet.cs" />
+    <Compile Include="Assets\1-Scripts\Zone Generation\Zone_3_SkyboxSet.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

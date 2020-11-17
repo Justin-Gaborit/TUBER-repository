@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 6806094617428616498}
   - component: {fileID: 1775167342164857442}
   - component: {fileID: 1520717080410807839}
-  - component: {fileID: 3142993540582714443}
+  - component: {fileID: 5032570143412009775}
   m_Layer: 0
   m_Name: Spawn Trigger
   m_TagString: Untagged
@@ -253,7 +253,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3142993540582714443
+--- !u!114 &5032570143412009775
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 206254916401108197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59159c1b84d86f41b63cde703657b54, type: 3}
+  m_Script: {fileID: 11500000, guid: 7358a04cae13c874583e7c71e5fde468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CellArray:
@@ -9754,7 +9754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1145387776351485678}
   m_Layer: 0
-  m_Name: Zone2_Cell_Zone1Trigger
+  m_Name: Zone2_Cell_Zone3Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27992,7 +27992,7 @@ GameObject:
   - component: {fileID: 5647607921320934137}
   - component: {fileID: 6242495197478085833}
   - component: {fileID: 1820642305424165540}
-  - component: {fileID: 6391920371655940234}
+  - component: {fileID: 1705093458747395520}
   m_Layer: 0
   m_Name: Fog Trigger
   m_TagString: Untagged
@@ -28073,7 +28073,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6391920371655940234
+--- !u!114 &1705093458747395520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28082,11 +28082,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3337639981837212015}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f6488c9a7d64fc46a7b407d709cb9ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 582617c4eb8c43b42b4f1bc80c7a67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Zone_1_Skybox_Material: {fileID: 0}
-  Zone_1_FogColor: {r: 0, g: 0, b: 0, a: 0}
+  Zone_3_Skybox_Material: {fileID: 0}
+  Zone_3_FogColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &3342459379861208142
 GameObject:
   m_ObjectHideFlags: 0
