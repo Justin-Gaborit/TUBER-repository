@@ -1,27 +1,33 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CactoManagerAI
+    - Cacto_CenterTrigger
+    - Cacto_LeftTrigger
+    - Cacto_RightTrigger
     - CharacterControllerV2
     - CharacterTriggerManager
-    - ControlsToGame
-    - DeathSceneChange
+    - DeathMenuManager
     - DestroyCell_Trigger
     - DontDestroyAudio
     - DontDestroyOnLoad
     - Generation_Zone_1
+    - Generation_Zone_2
+    - Generation_Zone_3
     - MainMenuCameraManager
     - MainMenuManager
     - MobMoveLeftRight
     - OrientationScript
     - PlayerAnimationHandler
     - PlayerDistanceManager
-    - PlayerDoubloonManager
     - PlayerHealthManager
     - Random_Text
     - ShroombertAnimationManager
     - TargetSettings
-    - WorldGeneration
     - Zone1MobSpawnScript
+    - Zone_1_SkyboxSet
+    - Zone_2_SkyboxSet
+    - Zone_3_SkyboxSet
     Unity.ProBuilder.dll:
     - UnityEngine.ProBuilder.ProBuilderMesh
     Unity.TextMeshPro.dll:
@@ -33,10 +39,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -50,7 +54,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/DeathScene.unity:
+    Assets/5-Scenes/DeathScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -78,21 +82,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9748}
     - Class: 114
-      Script: {instanceID: 9974}
+      Script: {instanceID: 9976}
     - Class: 114
-      Script: {instanceID: 10004}
+      Script: {instanceID: 10006}
     - Class: 114
-      Script: {instanceID: 10062}
+      Script: {instanceID: 10064}
     - Class: 114
-      Script: {instanceID: 10604}
+      Script: {instanceID: 10124}
     - Class: 114
-      Script: {instanceID: 10850}
+      Script: {instanceID: 10612}
     - Class: 114
-      Script: {instanceID: 11734}
+      Script: {instanceID: 11200}
     - Class: 114
-      Script: {instanceID: 11896}
+      Script: {instanceID: 11752}
     - Class: 114
-      Script: {instanceID: 12458}
+      Script: {instanceID: 11916}
+    - Class: 114
+      Script: {instanceID: 12480}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -109,7 +115,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/MainMenu.unity:
+    Assets/5-Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -157,43 +163,59 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9870}
     - Class: 114
-      Script: {instanceID: 10048}
+      Script: {instanceID: 9914}
     - Class: 114
-      Script: {instanceID: 10062}
+      Script: {instanceID: 10050}
     - Class: 114
-      Script: {instanceID: 10226}
+      Script: {instanceID: 10064}
     - Class: 114
-      Script: {instanceID: 10242}
+      Script: {instanceID: 10220}
     - Class: 114
-      Script: {instanceID: 10280}
+      Script: {instanceID: 10232}
     - Class: 114
-      Script: {instanceID: 10604}
+      Script: {instanceID: 10286}
     - Class: 114
-      Script: {instanceID: 10670}
+      Script: {instanceID: 10596}
     - Class: 114
-      Script: {instanceID: 10806}
+      Script: {instanceID: 10612}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 10666}
     - Class: 114
-      Script: {instanceID: 11528}
+      Script: {instanceID: 10680}
     - Class: 114
-      Script: {instanceID: 11538}
+      Script: {instanceID: 10816}
     - Class: 114
-      Script: {instanceID: 11550}
+      Script: {instanceID: 10850}
     - Class: 114
-      Script: {instanceID: 11558}
+      Script: {instanceID: 11200}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11404}
     - Class: 114
-      Script: {instanceID: 11896}
+      Script: {instanceID: 11448}
     - Class: 114
-      Script: {instanceID: 12002}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 11546}
     - Class: 114
-      Script: {instanceID: 12170}
+      Script: {instanceID: 11556}
     - Class: 114
-      Script: {instanceID: 12458}
+      Script: {instanceID: 11568}
+    - Class: 114
+      Script: {instanceID: 11576}
+    - Class: 114
+      Script: {instanceID: 11832}
+    - Class: 114
+      Script: {instanceID: 11908}
+    - Class: 114
+      Script: {instanceID: 11916}
+    - Class: 114
+      Script: {instanceID: 12022}
+    - Class: 114
+      Script: {instanceID: 12058}
+    - Class: 114
+      Script: {instanceID: 12190}
+    - Class: 114
+      Script: {instanceID: 12480}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -212,7 +234,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/RunScene.unity:
+    Assets/5-Scenes/RunScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -252,35 +274,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9748}
     - Class: 114
-      Script: {instanceID: 9974}
+      Script: {instanceID: 9976}
     - Class: 114
-      Script: {instanceID: 10004}
+      Script: {instanceID: 10006}
     - Class: 114
-      Script: {instanceID: 10048}
+      Script: {instanceID: 10050}
     - Class: 114
-      Script: {instanceID: 10062}
+      Script: {instanceID: 10064}
     - Class: 114
-      Script: {instanceID: 10604}
+      Script: {instanceID: 10612}
     - Class: 114
-      Script: {instanceID: 10662}
+      Script: {instanceID: 10672}
     - Class: 114
-      Script: {instanceID: 11072}
+      Script: {instanceID: 11150}
     - Class: 114
-      Script: {instanceID: 11138}
+      Script: {instanceID: 11526}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11696}
     - Class: 114
-      Script: {instanceID: 11678}
+      Script: {instanceID: 11916}
     - Class: 114
-      Script: {instanceID: 11896}
+      Script: {instanceID: 12022}
     - Class: 114
-      Script: {instanceID: 12002}
+      Script: {instanceID: 12388}
     - Class: 114
-      Script: {instanceID: 12366}
+      Script: {instanceID: 12396}
     - Class: 114
-      Script: {instanceID: 12374}
-    - Class: 114
-      Script: {instanceID: 12458}
+      Script: {instanceID: 12480}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -300,49 +320,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
-      Script: {instanceID: 0}
-    Assets/Scenes/Temp Controls Scene.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9748}
-    - Class: 114
-      Script: {instanceID: 10004}
-    - Class: 114
-      Script: {instanceID: 10062}
-    - Class: 114
-      Script: {instanceID: 10604}
-    - Class: 114
-      Script: {instanceID: 11260}
-    - Class: 114
-      Script: {instanceID: 11896}
-    - Class: 114
-      Script: {instanceID: 12458}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -387,6 +364,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 520326e3538904597ec92ed8d84a85a9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cacto_RightTrigger
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -467,6 +450,12 @@ ScriptsOnlyBuild:
     className: PolyShape
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeathMenuManager
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -483,6 +472,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 9799a023b5d9fb8bc9693139426af514
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Zone_2_SkyboxSet
   - hash:
       serializedVersion: 2
       Hash: d984db513e3b9795418268c31c5cb017
@@ -569,6 +564,12 @@ ScriptsOnlyBuild:
     className: TubesTraveledValue
   - hash:
       serializedVersion: 2
+      Hash: c22dc5718160c074fc05224184064ae4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Zone_3_SkyboxSet
+  - hash:
+      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -579,6 +580,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 520326e3538904597ec92ed8d84a85a9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cacto_LeftTrigger
   - hash:
       serializedVersion: 2
       Hash: 31b7c673a338f311e38b953af751f14b
@@ -621,6 +628,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LandPointFollower
+  - hash:
+      serializedVersion: 2
+      Hash: 13e596e74cdb36a28aa7927c3e263898
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Generation_Zone_2
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -737,10 +750,22 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 520326e3538904597ec92ed8d84a85a9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cacto_CenterTrigger
+  - hash:
+      serializedVersion: 2
       Hash: d6a8e9bec3160a152b9b2710593d3caa
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
     className: ColorPalette
+  - hash:
+      serializedVersion: 2
+      Hash: 1a161a15830b942058611e05612d66e9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Zone_1_SkyboxSet
   - hash:
       serializedVersion: 2
       Hash: 12e64d607873da15ad3f833620350d51
@@ -753,6 +778,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 581a16c0c5e750120df5f6d4d9ad38eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CactoManagerAI
   - hash:
       serializedVersion: 2
       Hash: a23448c7c72bcfb0aaf37954810a86d5
@@ -839,6 +870,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: 13e596e74cdb36a28aa7927c3e263898
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Generation_Zone_3
+  - hash:
+      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -885,6 +922,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 5c684247b7415011847988cdb2de304e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TumbleWeedMove_LeftRight
   - hash:
       serializedVersion: 2
       Hash: 5372ed2ce39229b1ac910757999a8be2
@@ -995,8 +1038,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 5
   scenePathNames:
-  - Assets/Scenes/MainMenu.unity
-  - Assets/Scenes/Temp Controls Scene.unity
-  - Assets/Scenes/RunScene.unity
-  - Assets/Scenes/DeathScene.unity
-  playerPath: C:/Users/jstng/Desktop/TUBER build folder/Current Build/TUBER.exe
+  - Assets/5-Scenes/MainMenu.unity
+  - Assets/5-Scenes/RunScene.unity
+  - Assets/5-Scenes/DeathScene.unity
+  playerPath: C:/Users/Justin/Desktop/TUBER build folder/Current Build/TUBER.exe

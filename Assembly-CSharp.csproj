@@ -47,6 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>4.8.2.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2019.2.0f1</UnityVersion>
@@ -79,6 +80,11 @@
     <Compile Include="Assets\1-Scripts\Mob Scripts\Cacto Scripts\CactoManagerAI.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\Shroombert Scripts\MobMoveLeftRight.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\Shroombert Scripts\ShroombertAnimationManager.cs" />
+    <Compile Include="Assets\1-Scripts\Mob Scripts\SlamDowner Scripts\SlamDownerLogic.cs" />
+    <Compile Include="Assets\1-Scripts\Mob Scripts\Spike Scripts\SpikeTrigger.cs" />
+    <Compile Include="Assets\1-Scripts\Mob Scripts\Spikeball Scripts\SpikeBallTrigger.cs" />
+    <Compile Include="Assets\1-Scripts\Mob Scripts\Totem Scripts\TotemProjectile.cs" />
+    <Compile Include="Assets\1-Scripts\Mob Scripts\Totem Scripts\TotemTrigger.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\TumbleWeed Scripts\TumbleWeedMove_LeftRight.cs" />
     <Compile Include="Assets\1-Scripts\Player Scripts\CharacterController.cs" />
     <Compile Include="Assets\1-Scripts\Player Scripts\CharacterControllerV2.cs" />
@@ -99,10 +105,14 @@
     <Compile Include="Assets\1-Scripts\Zone Generation\Generation_Zone_1.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Generation_Zone_2.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Generation_Zone_3.cs" />
+    <Compile Include="Assets\1-Scripts\Zone Generation\Generation_Zone_4.cs" />
+    <Compile Include="Assets\1-Scripts\Zone Generation\Generation_Zone_5.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\WorldGeneration.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Zone_1_SkyboxSet.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Zone_2_SkyboxSet.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Zone_3_SkyboxSet.cs" />
+    <Compile Include="Assets\1-Scripts\Zone Generation\Zone_4_SkyboxSet.cs" />
+    <Compile Include="Assets\1-Scripts\Zone Generation\Zone_5_SkyboxSet.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
@@ -123,52 +133,52 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder.Editor">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/jstng/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Justin/Desktop/Local Repository/TUBER-repository/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

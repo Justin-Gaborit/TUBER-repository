@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6806094617428616498}
   - component: {fileID: 1775167342164857442}
   - component: {fileID: 1520717080410807839}
-  - component: {fileID: 7503018568066205547}
+  - component: {fileID: 8466694410982121427}
   m_Layer: 0
   m_Name: Spawn Trigger
   m_TagString: Untagged
@@ -93,7 +93,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7503018568066205547
+--- !u!114 &8466694410982121427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 206254916401108197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b59159c1b84d86f41b63cde703657b54, type: 3}
+  m_Script: {fileID: 11500000, guid: 38e658e13cfe2d84299b078f7e8ed190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CellArray:
@@ -930,7 +930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1145387776351485678}
   m_Layer: 0
-  m_Name: Zone3_Cell_Zone1Trigger
+  m_Name: Zone3_Cell_Zone4Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4031,7 +4031,7 @@ GameObject:
   - component: {fileID: 6785388923536762617}
   - component: {fileID: 2536851032143798550}
   - component: {fileID: 2412099310825027059}
-  - component: {fileID: 2741810193979261116}
+  - component: {fileID: 257044369496940473}
   m_Layer: 0
   m_Name: Fog Trigger
   m_TagString: Untagged
@@ -4112,7 +4112,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2741810193979261116
+--- !u!114 &257044369496940473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4121,11 +4121,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8442471208972730157}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f6488c9a7d64fc46a7b407d709cb9ef, type: 3}
+  m_Script: {fileID: 11500000, guid: c249ccd4def72174681b57714c2bb09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Zone_1_Skybox_Material: {fileID: 0}
-  Zone_1_FogColor: {r: 0, g: 0, b: 0, a: 0}
+  Zone_4_Skybox_Material: {fileID: 0}
+  Zone_4_FogColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &8688946483099252872
 GameObject:
   m_ObjectHideFlags: 0
@@ -11452,6 +11452,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8114867576270105809, guid: 7dfed6cc24736f84692d753663be4393,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2174983039778339446, guid: 7dfed6cc24736f84692d753663be4393,
         type: 3}
       propertyPath: Loop1
@@ -11578,11 +11583,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4448512709998647109, guid: db0ebfee17893064cb0be88b6b82875b,
         type: 3}
-    - target: {fileID: 8114867576270105809, guid: 7dfed6cc24736f84692d753663be4393,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2174983039778339446, guid: 7dfed6cc24736f84692d753663be4393, type: 3}
     - {fileID: 6292905153497268049, guid: 7dfed6cc24736f84692d753663be4393, type: 3}
