@@ -11,8 +11,8 @@ public class Generation_Zone_5 : MonoBehaviour
         CellArray[0] = Resources.Load("Zone5_Cell_0") as GameObject;
         CellArray[1] = Resources.Load("Zone5_Cell_1") as GameObject;
         CellArray[2] = Resources.Load("Zone5_Cell_2") as GameObject;
-        CellArray[3] = Resources.Load("Zone5_Cell_4") as GameObject;
-        CellArray[4] = Resources.Load("Zone5_Cell_5") as GameObject;
+        CellArray[3] = Resources.Load("Zone5_Cell_3") as GameObject;
+        CellArray[4] = Resources.Load("Zone5_Cell_4") as GameObject;
         CellArray[5] = Resources.Load("Zone5_Cell_Zone1Trigger") as GameObject;
     }
 

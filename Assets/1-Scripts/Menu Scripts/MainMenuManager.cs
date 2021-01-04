@@ -40,6 +40,8 @@ public class MainMenuManager : MonoBehaviour
     public AudioSource SFX_1;
     public AudioSource SFX_2;
 
+    public GameObject Game_Cursor_Obj;
+
     void Start()
     {
         StartCoroutine(myFunction());
@@ -61,6 +63,8 @@ public class MainMenuManager : MonoBehaviour
 
         ButtonExitAnimator = ButtonExit.GetComponent<Animator>();
         ButtonExitAnimator.speed = 0;
+
+        Cursor.visible = false;
     }
 
     void StartMainMenuSystem()
@@ -82,6 +86,8 @@ public class MainMenuManager : MonoBehaviour
             ButtonOptionsAnimator.speed = 1;
             ButtonCreditsAnimator.speed = 1;
             ButtonExitAnimator.speed = 1;
+            Cursor.visible = true;
+            Game_Cursor_Obj.SetActive(true);
         }
     }
 

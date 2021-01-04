@@ -69,6 +69,7 @@
     <Compile Include="Assets\1-Scripts\Death Screen Scripts\TubesTraveledValue.cs" />
     <Compile Include="Assets\1-Scripts\DestroyCell_Trigger.cs" />
     <Compile Include="Assets\1-Scripts\Intro Scripts\IntroScript.cs" />
+    <Compile Include="Assets\1-Scripts\Menu Scripts\CursorScript.cs" />
     <Compile Include="Assets\1-Scripts\Menu Scripts\DeathMenuManager.cs" />
     <Compile Include="Assets\1-Scripts\Menu Scripts\MainMenuCameraManager.cs" />
     <Compile Include="Assets\1-Scripts\Menu Scripts\MainMenuManager.cs" />
@@ -80,9 +81,13 @@
     <Compile Include="Assets\1-Scripts\Mob Scripts\Cacto Scripts\CactoManagerAI.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\Shroombert Scripts\MobMoveLeftRight.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\Shroombert Scripts\ShroombertAnimationManager.cs" />
+    <Compile Include="Assets\1-Scripts\Mob Scripts\Shuffler Scripts\ShufflerAnimationManager.cs" />
+    <Compile Include="Assets\1-Scripts\Mob Scripts\Shuffler Scripts\ShufflerMoveLeftRight.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\SlamDowner Scripts\SlamDownerLogic.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\Spike Scripts\SpikeTrigger.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\Spikeball Scripts\SpikeBallTrigger.cs" />
+    <Compile Include="Assets\1-Scripts\Mob Scripts\Spirit Scripts\SpiritAnimationHandler.cs" />
+    <Compile Include="Assets\1-Scripts\Mob Scripts\Spirit Scripts\SpiritMoveLeftRight.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\Totem Scripts\TotemProjectile.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\Totem Scripts\TotemTrigger.cs" />
     <Compile Include="Assets\1-Scripts\Mob Scripts\TumbleWeed Scripts\TumbleWeedMove_LeftRight.cs" />
