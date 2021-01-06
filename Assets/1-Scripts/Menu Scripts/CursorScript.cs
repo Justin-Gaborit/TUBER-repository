@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CursorScript : MonoBehaviour
 {
@@ -13,6 +14,22 @@ public class CursorScript : MonoBehaviour
 
         //Sets the dafualt OS cursor to the one we established above
         Cursor.SetCursor(MouseCursor, cursorOffset, CursorMode.Auto);
+    }
+
+    void Update()
+    {
+        Scene CurrentScene = SceneManager.GetActiveScene();
+        string SceneName = CurrentScene.name;
+
+        if (SceneName == "RunScene")
+        {
+            Cursor.visible = false;
+        }
+
+        else if (SceneName == "DeathScene")
+        {
+            Cursor.visible = true;
+        }
     }
 
 }

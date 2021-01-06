@@ -16,6 +16,8 @@ public class CharacterControllerV2 : MonoBehaviour
     public bool _JumpHeightMet;
     public bool _IsJumping;
 
+    public AudioSource CharacterJump_FX;
+
     void Start()
     {
         _PlayerRB = GetComponent<Rigidbody>();      //Fetches the rigidbody attached to the player
@@ -50,7 +52,8 @@ public class CharacterControllerV2 : MonoBehaviour
 
         if (Input.GetKeyDown("space") && _Grounded == true)                             //If space bar is down and grounded is true
         {
-            _IsJumping = true;   
+            _IsJumping = true;
+            CharacterJump_FX.Play();
         }
     }
 
