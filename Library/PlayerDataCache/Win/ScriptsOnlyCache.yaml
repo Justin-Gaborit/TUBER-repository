@@ -58,6 +58,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -835,7 +836,7 @@ ScriptsOnlyBuild:
     className: IgnoreSnap
   - hash:
       serializedVersion: 2
-      Hash: fcb3cf9a13280468ae1bd98598f264b2
+      Hash: f360bbdcb39be51847e06916a9f6387b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterControllerV2
@@ -1186,4 +1187,4 @@ ScriptsOnlyBuild:
   - Assets/5-Scenes/MainMenu.unity
   - Assets/5-Scenes/RunScene.unity
   - Assets/5-Scenes/DeathScene.unity
-  playerPath: C:/Users/Justin/Desktop/TUBER build folder/Current Build/TUBER.exe
+  playerPath: C:/Users/Justin/Desktop/TUBER 0.1.1/TUBER.exe

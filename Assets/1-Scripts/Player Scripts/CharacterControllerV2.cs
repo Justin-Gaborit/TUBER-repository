@@ -18,6 +18,8 @@ public class CharacterControllerV2 : MonoBehaviour
 
     public AudioSource CharacterJump_FX;
 
+    public GameObject PauseMenu;
+
     void Start()
     {
         _PlayerRB = GetComponent<Rigidbody>();      //Fetches the rigidbody attached to the player
@@ -25,7 +27,7 @@ public class CharacterControllerV2 : MonoBehaviour
         _JumpHeightMet = false;
         _LRMaxSpeed = _LRSpeed;
         _IsJumping = false;
-        _RunSpeed = 40;
+        _RunSpeed = 42;
     }
 
     void Update()
@@ -55,6 +57,7 @@ public class CharacterControllerV2 : MonoBehaviour
             _IsJumping = true;
             CharacterJump_FX.Play();
         }
+        
     }
 
     void FixedUpdate()
@@ -74,6 +77,7 @@ public class CharacterControllerV2 : MonoBehaviour
 
         //GROUND DETECTION RAYCAST
         RaycastHit GroundedHitInfo;
+        Physics.Raycast(transform.position, -transform.up, out GroundedHitInfo, 3.5f);
         Physics.Raycast(transform.position, -transform.up, out GroundedHitInfo, 3.5f);
         Debug.DrawRay(transform.position, -transform.up * 3.5f, Color.blue);
 

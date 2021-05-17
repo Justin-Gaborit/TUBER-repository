@@ -9,11 +9,16 @@ public class Generation_Zone_3 : MonoBehaviour
     void Start()
     {
         CellArray[0] = Resources.Load("Zone3_Cell_0") as GameObject;
-        CellArray[1] = Resources.Load("Zone3_Cell_1") as GameObject;
+        CellArray[1] = Resources.Load("Zone3_Cell_4") as GameObject;
         CellArray[2] = Resources.Load("Zone3_Cell_2") as GameObject;
         CellArray[3] = Resources.Load("Zone3_Cell_3") as GameObject;
         CellArray[4] = Resources.Load("Zone3_Cell_4") as GameObject;
         CellArray[5] = Resources.Load("Zone3_Cell_Zone4Trigger") as GameObject;
+    }
+
+    void Update()
+    {
+       
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -28,6 +33,36 @@ public class Generation_Zone_3 : MonoBehaviour
             Destroy(GameObject.Find("SpawnLoc"));
             Debug.Log("Collided and Cell Generated");
             Destroy(gameObject);
+
+            if (RandomInt == 0)
+            {
+                Debug.Log("Zone3_Cell_0");
+            }
+
+            if (RandomInt == 1)
+            {
+                Debug.Log("Zone3_Cell_1");
+            }
+
+            if (RandomInt == 2)
+            {
+                Debug.Log("Zone3_Cell_2");
+            }
+
+            if (RandomInt == 3)
+            {
+                Debug.Log("Zone3_Cell_3");
+            }
+
+            if (RandomInt == 4)
+            {
+                Debug.Log("Zone3_Cell_4");
+            }
+
+            if (RandomInt == 5)
+            {
+                Debug.Log("Zone3_Cell_Zone4Trigger");
+            }
         }
     }
 }

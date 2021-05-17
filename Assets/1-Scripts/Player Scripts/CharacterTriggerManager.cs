@@ -74,7 +74,6 @@ public class CharacterTriggerManager : MonoBehaviour
         {
             PlayerDistance += 1;
             Destroy(colides.gameObject);
-            Debug.Log("Distance Collided");
         }
 
     }
