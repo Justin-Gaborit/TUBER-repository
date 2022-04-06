@@ -2,25 +2,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
     public GameObject TUBER_Title;          //Establishes a public game object that holds the menu logo.
     public Animator TUBERTitleAnimator;     //Establishes a public animator that holds the TUBER logo animator.
 
+    [Header("Run Button Settings")]
     public GameObject ButtonRun;
+    public bool ButtonRun_Current;
+    public Sprite ButtonRun_Hover_Spr;
     public Animator ButtonRunAnimator;
 
+    [Header("Controls Button Settings")]
     public GameObject ButtonControls;
+    public bool ButtonControls_Current;
+    public Sprite ButtonControls_Hover_Spr;
     public Animator ButtonControlsAnimator;
 
+    [Header("Options Button Settings")]
     public GameObject ButtonOptions;
+    public bool ButtonOptions_Current;
+    public Sprite ButtonOptions_Hover_Spr;
     public Animator ButtonOptionsAnimator;
 
+    [Header("Credits Button Settings")]
     public GameObject ButtonCredits;
+    public bool ButtonCredits_Current;
+    public Sprite ButtonCredits_Hover_Spr;
     public Animator ButtonCreditsAnimator;
 
+    [Header("Exit Button Settings")]
     public GameObject ButtonExit;
+    public bool ButtonExit_Current;
+    public Sprite ButtonExit_Hover_Spr;
     public Animator ButtonExitAnimator;
 
     public GameObject Start_Button;         //Establishes a public game object that holds the "press any button text".
@@ -41,6 +57,8 @@ public class MainMenuManager : MonoBehaviour
     public AudioSource SFX_2;
 
     public GameObject Game_Cursor_Obj;
+
+    public bool MenuSelectable;
 
     void Start()
     {
@@ -65,6 +83,8 @@ public class MainMenuManager : MonoBehaviour
         ButtonExitAnimator.speed = 0;
 
         Cursor.visible = false;
+        Game_Cursor_Obj.SetActive(false);
+        MenuSelectable = false;
     }
 
     void StartMainMenuSystem()
@@ -79,6 +99,7 @@ public class MainMenuManager : MonoBehaviour
 
         if (TUBER_Title_Anim1 == true && Input.anyKey)
         {
+            SceneManager.LoadScene("RunScene");
             Start_Button.SetActive(false);
             TUBERTitleAnimator.SetInteger("TUBER_Title_MenuEvent_1", 1);
             ButtonRunAnimator.speed = 1;
@@ -86,34 +107,48 @@ public class MainMenuManager : MonoBehaviour
             ButtonOptionsAnimator.speed = 1;
             ButtonCreditsAnimator.speed = 1;
             ButtonExitAnimator.speed = 1;
-            Cursor.visible = true;
-            Game_Cursor_Obj.SetActive(true);
         }
     }
 
     //Main Menu Buttons
     public void RunButtonPressed()
     {
-        SceneManager.LoadScene("RunScene");
+        if (MenuSelectable == true)
+        {
+            SceneManager.LoadScene("RunScene");
+        }
     }
     public void ControlsButtonPressed()
     {
-        ControlsPanel.gameObject.SetActive(true);
+        if (MenuSelectable == true)
+        {
+            ControlsPanel.gameObject.SetActive(true);
+            Menu_Button_Container.gameObject.SetActive(false);
+        }
     }
 
     public void CreditsButtonPressed()
     {
-        CreditsPanel.gameObject.SetActive(true);
+        if (MenuSelectable == true)
+        {
+            CreditsPanel.gameObject.SetActive(true);
+        }
     }
 
     public void OptionsButtonPressed()
     {
-        OptionsPanel.gameObject.SetActive(true);
+        if (MenuSelectable == true)
+        {
+            OptionsPanel.gameObject.SetActive(true);
+        }
     }
 
     public void ExitButtonPressed()
     {
-        Application.Quit();
+        if (MenuSelectable == true)
+        {
+            Application.Quit();
+        }
     }
 
     //Resolution Buttons
@@ -182,6 +217,7 @@ public class MainMenuManager : MonoBehaviour
         Start_Button.gameObject.SetActive(true);
         Menu_Button_Container.gameObject.SetActive(true);
         MainMenu_BG_Audio.gameObject.SetActive(true);
+        
     }
 
 
@@ -190,5 +226,10 @@ public class MainMenuManager : MonoBehaviour
     void Update()
     {
         StartMainMenuSystem();
+
+        if (ButtonRunAnimator.GetCurrentAnimatorStateInfo(0).IsName("Button_Run_Exit"))
+        {
+            MenuSelectable = true;
+        }
     }
 }

@@ -3,7 +3,43 @@ guid: e67299e012694ff4492ec4791d31d740
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - TUBER_Title: {instanceID: 0}
+  - TUBERTitleAnimator: {instanceID: 0}
+  - ButtonRun: {instanceID: 0}
+  - ButtonRun_Hover_Spr: {fileID: -3226143391353123439, guid: 627dacda8d9f1b547b2e0f852bee2346,
+      type: 3}
+  - ButtonRunAnimator: {instanceID: 0}
+  - ButtonControls: {instanceID: 0}
+  - ButtonControls_Hover_Spr: {fileID: -658527978630387048, guid: e12140e5447c2f648ac2200213e11ecd,
+      type: 3}
+  - ButtonControlsAnimator: {instanceID: 0}
+  - ButtonOptions: {instanceID: 0}
+  - ButtonOptions_Hover_Spr: {fileID: -945638677345578541, guid: 6408781bcfeddbe4dbaa20896b8e451b,
+      type: 3}
+  - ButtonOptionsAnimator: {instanceID: 0}
+  - ButtonCredits: {instanceID: 0}
+  - ButtonCredits_Hover_Spr: {fileID: 8593949394012330165, guid: d61544cddc281d040870df1a52805362,
+      type: 3}
+  - ButtonCreditsAnimator: {instanceID: 0}
+  - ButtonExit: {instanceID: 0}
+  - ButtonExit_Hover_Spr: {fileID: 8439632443929691300, guid: f7a87efa675568647841b95cf383c123,
+      type: 3}
+  - ButtonExitAnimator: {instanceID: 0}
+  - Start_Button: {instanceID: 0}
+  - StartButtonAnimator: {instanceID: 0}
+  - Menu_Button_Container: {instanceID: 0}
+  - ControlsPanel: {instanceID: 0}
+  - CreditsPanel: {instanceID: 0}
+  - OptionsPanel: {instanceID: 0}
+  - Intro_Panel: {instanceID: 0}
+  - By_Text: {instanceID: 0}
+  - Justin_Text: {instanceID: 0}
+  - Tuber_Image: {instanceID: 0}
+  - MainMenu_BG_Audio: {instanceID: 0}
+  - SFX_1: {instanceID: 0}
+  - SFX_2: {instanceID: 0}
+  - Game_Cursor_Obj: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

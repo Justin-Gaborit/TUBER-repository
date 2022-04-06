@@ -60,6 +60,7 @@
     <Compile Include="Assets\1-Scripts\UI Scripts\PlayerHealthManager.cs" />
     <Compile Include="Assets\1-Scripts\Settings Scripts\TargetSettings.cs" />
     <Compile Include="Assets\1-Scripts\Scene Change Scripts\SpaceToStart.cs" />
+    <Compile Include="Assets\1-Scripts\Menu Scripts\InputDetection.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Zone_5_SkyboxSet.cs" />
     <Compile Include="Assets\1-Scripts\Zone Generation\Zone_2_SkyboxSet.cs" />
     <Compile Include="Assets\1-Scripts\Player Scripts\CharacterTriggerManager.cs" />

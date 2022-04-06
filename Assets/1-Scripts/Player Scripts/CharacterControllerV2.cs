@@ -32,32 +32,47 @@ public class CharacterControllerV2 : MonoBehaviour
 
     void Update()
     {
+        // Move Right Input
         if (Input.GetKey("right") && _PlayerRB.velocity.magnitude <= _LRMaxSpeed && _Grounded == true)
         {
             transform.Translate(Vector3.right * _LRSpeed * Time.deltaTime);
-            //_PlayerRB.velocity = transform.right * _LRSpeed;
         }
         else if (Input.GetKeyUp("right") && _Grounded == true)
         {
             _PlayerRB.velocity = Vector3.zero;
         }
+        else if (Input.GetAxisRaw("Horizontal") > 0 && _PlayerRB.velocity.magnitude <= _LRMaxSpeed && _Grounded == true)
+        {
+            transform.Translate(Vector3.right * _LRSpeed * Time.deltaTime);
+        }
 
+        // Move Left Input
         if (Input.GetKey("left") && _PlayerRB.velocity.magnitude <= _LRMaxSpeed && _Grounded == true)
         {
             transform.Translate(-Vector3.right * _LRSpeed * Time.deltaTime);
-            //_PlayerRB.velocity -= transform.right * _LRSpeed;
         }
         else if (Input.GetKeyUp("left") && _Grounded == true)
         {
             _PlayerRB.velocity = Vector3.zero;
         }
+        else if (Input.GetAxisRaw("Horizontal") < 0 && _PlayerRB.velocity.magnitude <= _LRMaxSpeed && _Grounded == true)
+        {
+            transform.Translate(Vector3.left * _LRSpeed * Time.deltaTime);
+        }
 
+        // Jumping Input
         if (Input.GetKeyDown("space") && _Grounded == true)                             //If space bar is down and grounded is true
         {
             _IsJumping = true;
             CharacterJump_FX.Play();
         }
-        
+
+        if (Input.GetKeyDown("joystick button 0") && _Grounded == true)                 //Xbox Controller Input: "A" button to jump 
+        {
+            _IsJumping = true;
+            CharacterJump_FX.Play();
+        }
+
     }
 
     void FixedUpdate()

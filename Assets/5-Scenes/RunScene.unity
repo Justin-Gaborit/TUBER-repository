@@ -1124,7 +1124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &415796337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4966,7 +4966,7 @@ PrefabInstance:
     - target: {fileID: 2764795394983416346, guid: ebf6805f1580e0f4b81bab72df066e02,
         type: 3}
       propertyPath: rotTime
-      value: 0.05
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2934578669698233603, guid: ebf6805f1580e0f4b81bab72df066e02,
         type: 3}
